@@ -1,2 +1,1 @@
-// renderJournalEntries(objectsJournalEntry)
-
+API.getJournalEntries().then(renderJournalEntries)
