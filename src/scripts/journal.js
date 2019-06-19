@@ -58,8 +58,8 @@ const renderJournalEntries = (entries) => { //function to add items to eventuall
 
 // Your learning objective in this chapter is to set up JSON Server to store the data for your daily journal entries, query that data from the API, and then use your knowledge of Promises (remember, fetch is a fancy Promise) and then() to render the entries to the DOM.
 
-fetch("http://localhost:3000/entries") // Fetch from the API
+fetch("http://localhost:8088/entries") // Fetch from the API
     .then(journalData => journalData.json())  // Parse as JSON
-    .then(entries => {console.log(entries)
+    .then(entries => {renderJournalEntries(entries)
         // What should happen when we finally have the array?
     })
