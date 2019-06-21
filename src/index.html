@@ -24,20 +24,20 @@
       </fieldset>
       <fieldset>
         <label for="mood">Mood</label>
-        <select name="Mood" id="mood">
-          <option value="Sad">Sad</option>
+        <select name="mood" id="mood">
           <option value="Happy">Happy</option>
+          <option value="Excited">Excited</option>
           <option value="Frustrated">Frustrated</option>
           <option value="Weird">Weird</option>
           <option value="Confused">Confused</option>
         </select>
       </fieldset>
-      <button type="button">Record Journal Entry</button>
+      <button id="clickButton" type="button">Record Journal Entry</button>
     </form>
     <article id="entryLog"></article>
-    <script src="scripts/data.js"></script>
     <script src="scripts/entriesDOM.js"></script>
     <script src="scripts/entryComponent.js"></script> 
+    <script src="scripts/data.js"></script>
     <script src="scripts/journal.js"></script>
   </body>
 </html>
