@@ -5,8 +5,8 @@ function makeJournalEntryComponents(journalEntry) {
     return `
     <div>
     <h1>${journalEntry.Date_of_Entry}</h1>
-    <h2>${journalEntry.Concepts_Covered}</h2>
-    <h3>${journalEntry.Mood}</h3>
+    <h3>${journalEntry.Concepts_Covered}</h3>
+    <h4>${journalEntry.Mood}</h4>
     <p>${journalEntry.Journal_Entry}</p>
     </div>
     `
