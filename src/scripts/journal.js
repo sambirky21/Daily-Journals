@@ -22,5 +22,18 @@ function journalFactory(date, concepts, entry, mood) {
     }
 }
 
+let radioBTN = document.getElementsByName("mood")
+radioBTN.forEach(radio => {
+  radio.addEventListener("click", event => {
+    let moodValue = event.target.value
+    console.log(moodValue)
+    API.getJournalEntries().then(entries => {
+      let moodString = entries.filter(entry => entry.Mood === `${moodValue}`)
+      console.log(moodString)
+      renderJournalEntries(moodString)
+    })  
+  })
+})
+
 eventListener()
 API.getJournalEntries().then(renderJournalEntries)

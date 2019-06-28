@@ -14,14 +14,17 @@
         <label for="journalDate">Date of Entry</label>
         <input type="date" name="journalDate" id="journalDate" />
       </fieldset>
+
       <fieldset>
         <label for="conceptsCovered">Concepts Covered</label>
         <input type="text" name="conceptsCovered" id="conceptsCovered" />
       </fieldset>
+
       <fieldset>
         <label for="journalEntry">Journal Entry</label>
         <textarea type="text" name="journalEntry" id="journalEntry" ></textarea>
       </fieldset>
+
       <fieldset>
         <label for="mood">Mood</label>
         <select name="mood" id="mood">
@@ -32,7 +35,28 @@
           <option value="Confused">Confused</option>
         </select>
       </fieldset>
+
       <button id="clickButton" type="button">Record Journal Entry</button>
+
+      <fieldset>
+        <legend for="mood">Filter Journal Entries by Mood</legend>
+        
+        <label for="mood">Happy</label>
+        <input type="radio" name="mood" value="Happy">
+
+        <label for="mood">Excited</label>
+        <input type="radio" name="mood" value="Excited">
+
+        <label for="mood">Frustrated</label>
+        <input type="radio" name="mood" value="Frustrated">
+
+        <label for="mood">Weird</label>
+        <input type="radio" name="mood" value="Weird">
+
+        <label for="mood">Confused</label>
+        <input type="radio" name="mood" value="Confused">
+
+      </fieldset>
     </form>
     <article id="entryLog"></article>
     <script src="scripts/entriesDOM.js"></script>
